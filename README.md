@@ -2,7 +2,7 @@
 
 This repository contains the completed work for Task 2 of the Cyber Security Internship. The task focused on cracking weak passwords using **Hashcat** and **John the Ripper** tools in Kali Linux.
 
-## ✅ Tools Used
+## Tools Used
 Operating System: Kali Linux
 Password Cracking Tools:
   - Hashcat v6.2.6 
@@ -11,12 +11,12 @@ Wordlists / Dictionaries:
   - rockyou.txt
   - Custom dictionary (`small.txt`)
 
-## ✅ Objective
+## Objective
 The objective of this task was to learn how weak passwords are vulnerable to dictionary and brute-force attacks, and to understand how attackers can exploit such weaknesses. We also explored how to defend against these types of attacks.
 
 ---
 
-## ✅ Files Included
+## Files Included
 
 | File                 | Description                                  |
 |----------------------|----------------------------------------------|
@@ -32,7 +32,7 @@ The objective of this task was to learn how weak passwords are vulnerable to dic
 
 ---
 
-## ✅ Dictionary Attack Results
+## Dictionary Attack Results
 
 ### Hashcat (MD5 hashes cracked)
 
@@ -47,7 +47,7 @@ e10adc3949ba59abbe56e057f20f883e:123456
 Administrator::badminton
 Admin::123456
 ```
-## ✅ Commands Used
+## Commands Used
 ```text
 hashcat -m 0 -O hashes.txt small.txt
 hashcat --show -m 0 hashes.txt
@@ -59,7 +59,7 @@ john --wordlist=/usr/share/wordlists/rockyou.txt hash1.txt
 john --show --format=netntlmv2 hash1.txt
 ```
 
-## ✅ Brute-Force Attack Results
+## Brute-Force Attack Results
 
 ### Hashcat (MD5 hashes cracked)
 ```text
@@ -74,7 +74,7 @@ b7a875fc1ea228b9061041b7cec4bd3c52ab3ce3:letmein
 8d969eef6ecad3c29a3a629280e686cff8fab7a7f5f5a5a1e0f22f4bfe7f4f4e:123456
 ```
 
-## ✅ Commands Used
+## Commands Used
 ```text
 hashcat -m 0 -a 3 md5.txt ?l?l?l?l?l?l?d?d?d
 hashcat --show -m 0 md5.txt
@@ -88,12 +88,12 @@ hashcat --show -m 1400 sha256.txt
 ```
 
 
-## ✅ Screenshots
+## Screenshots
 
 Screenshots showing successful password cracks using both Hashcat and John the Ripper are available in the screenshots/ folder.
 
 
-## ✅ Learnings
+## Learnings
 ```text
 
 1. Password Security:
